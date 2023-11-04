@@ -50,7 +50,7 @@
 
 - `App.tsx`에서 `@react-three/fiber` 불러오기
 
-```js
+```ts
 import { Canvas } from '@react-three/fiber';
 import { Element3D } from './Element3D'; // 만든 파일
 
@@ -66,11 +66,10 @@ const App = () => {
 
 ## ts에서 useRef 사용하기
 
-```js
+```ts
 import { useRef } from 'react';
 import { Mesh } from 'three';
 
-// prettier-ignore
 const refMesh = useRef<Mesh>(null);
 
 return <mesh ref={refMesh}></mesh>;
